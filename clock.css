@@ -34,3 +34,8 @@ body {
   margin-left: 0;
   margin-right: 0;
 }
+
+#weather{
+  background-color: white;
+  background: white;
+}
