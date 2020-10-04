@@ -2,6 +2,7 @@
 
 body {
   background-color: #121212;
+  margin: 0;
 }
 
 #clock {
@@ -35,7 +36,15 @@ body {
   margin-right: 0;
 }
 
-#weather{
-  background-color: white;
-  background: white;
+
+
+#weather ul{
+  display:flex;
+  flex-direction: row;
+  list-style: none;
+  color: #66ee99;
+}
+
+#weather li{
+  margin-right: 5px;
 }

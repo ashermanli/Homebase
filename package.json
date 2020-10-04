@@ -1,0 +1,19 @@
+{
+  "name": "clock",
+  "version": "1.0.0",
+  "description": "Homebase project",
+  "main": "clock.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashermanli/Homebase.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashermanli/Homebase/issues"
+  },
+  "homepage": "https://github.com/ashermanli/Homebase#readme"
+}
