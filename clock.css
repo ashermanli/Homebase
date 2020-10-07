@@ -43,6 +43,8 @@ body {
   flex-direction: row;
   list-style: none;
   color: #66ee99;
+  margin: 0;
+  padding: 0;
 }
 
 #weather li{
