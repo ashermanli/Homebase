@@ -30,6 +30,7 @@ body {
 }
 
 #progress{
+    border: 1px solid lime;
   width: 100%;
   background-color: grey;
   margin-left: 0;
@@ -39,6 +40,7 @@ body {
 #bar{
   width: 1%;
   height: 30px;
+
   background-color: var(--text-color);
   margin-left: 0;
   margin-right: 0;
@@ -74,7 +76,7 @@ body {
   list-style: none;
   margin: 10px 25px;
   padding: 30px;
-  border-left: 5px solid var(--main-color);
+  border-left: 3px solid var(--main-color);
 }
 
 #list li:hover{
@@ -82,6 +84,10 @@ body {
 }
 
 #add-task{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   width: 400px;
   margin: 0 auto;
 }
@@ -91,6 +97,10 @@ margin: 20px 0;
 padding: 10px;
 border: 1px solid var(--main-color);
 border-radius: 4px 0 0 4px;
+}
+
+#add-task label{
+  margin-left: 20px;
 }
 
 #add-task button{
