@@ -1,0 +1,3 @@
+/node_modules
+#ignore config file with api keys
+config.js
