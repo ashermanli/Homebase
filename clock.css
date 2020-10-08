@@ -1,13 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Orbitron");
 
+:root{
+  --main-color: red;
+  --accent-color: maroon;
+  --text-color: #66ee99;
+  --button-contrast: black;
+}
+
 body {
   background-color: #121212;
   margin: 0;
+  font-family: 'Orbitron', sans-serif;
 }
 
 #clock {
-  font-family: 'Orbitron', sans-serif;
-  color: #66ff99;
+
+  color: var(--text-color);
   font-size: 56px;
   text-align: center;
   padding-top: 40px;
@@ -31,7 +39,7 @@ body {
 #bar{
   width: 1%;
   height: 30px;
-  background-color: #66ee99;
+  background-color: var(--text-color);
   margin-left: 0;
   margin-right: 0;
 }
@@ -42,73 +50,80 @@ body {
   display:flex;
   flex-direction: row;
   list-style: none;
-  color: #66ee99;
+  color: var(--text-color);
   margin: 0;
   padding: 0;
 }
 
 #weather li{
-  margin-right: 5px;
+  padding:0 20px;
 }
 
 #wrapper{
   width: 90%;
   margin: 20px auto;
-  border: 2px solid red;
+  border: 2px solid var(--main-color);
+  color: var(--text-color);
 }
 
 #list{
-color:#66ee99;
+/* color:white; */
 }
 
 #list li{
   list-style: none;
   margin: 10px 25px;
   padding: 30px;
-  border-left: 3px solid white;
+  border-left: 5px solid var(--main-color);
 }
 
 #list li:hover{
-  border-color: red;
+  border-color: var(--accent-color);
 }
 
-#add-book{
+#add-task{
   width: 400px;
   margin: 0 auto;
 }
 
-#add-book input{
+#add-task input{
 margin: 20px 0;
 padding: 10px;
-border: 1px solid red;
+border: 1px solid var(--main-color);
 border-radius: 4px 0 0 4px;
 }
 
-#add-book button{
-  color: white;
-  background:red;
-  border: 1px solid red;
+#add-task button{
+  color: var(--text-color);
+  background:var(--main-color);
+  border: 1px solid var(--main-color);
   border-radius: 0 4px 4px 0;
   margin: 20px 0;
   padding: 10px 20px;
   cursor:pointer;
 }
 
-#add-book:after{
+#add-task button:hover{
+  background-color: var(--accent-color);
+}
+
+#add-task:after{
   content: "";
   display:block;
   clear:both;
 }
 
  .delete{
-  background-color: red;
-  width: 30px;
+   text-align: center;
+  background-color: var(--button-contrast);
+  width: 10%;
   float: right;
   padding: 15px;
   border-radius: 4px;
 }
 
 .delete:hover{
-  background-color: white;
+  border: 1px solid var(--main-color);
+  background-color: var(--accent-color);
   cursor: pointer;
 }
